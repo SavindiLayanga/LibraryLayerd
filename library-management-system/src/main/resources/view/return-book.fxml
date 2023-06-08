@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="WinReturnBook" prefHeight="698.0" prefWidth="1077.0" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(to right,#acd5ff,#8a83d4,#8383d4);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.controller.ReturnBookController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1120.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../1st%20semester%20final%20project/src/main/resources/img/15517801_5630974.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </ImageView>
+      <Text fill="#1e1375" layoutX="60.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retun Book Manage">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="114.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return ID">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtReturnId" layoutX="133.0" layoutY="172.0" onAction="#txtReturnIdOnAction" prefHeight="39.0" prefWidth="317.0" />
+      <Text layoutX="114.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" wrappingWidth="133.99999129027128">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="549.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Book ID">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblReturnBook" layoutX="77.0" layoutY="326.0" prefHeight="354.0" prefWidth="907.0">
+        <columns>
+          <TableColumn fx:id="colReturnId" prefWidth="158.0" text="Return ID" />
+          <TableColumn fx:id="colIssueId" prefWidth="269.0" text="Issue Book ID" />
+            <TableColumn fx:id="colReturndt" prefWidth="240.0" text="Return Date" />
+            <TableColumn fx:id="colAction" prefWidth="239.0" text="Action" />
+        </columns>
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </TableView>
+      <DatePicker fx:id="dtReturndt" layoutX="132.0" layoutY="255.0" prefHeight="39.0" prefWidth="317.0" />
+      <ComboBox fx:id="cmbissueId" layoutX="577.0" layoutY="172.0" prefHeight="39.0" prefWidth="317.0" />
+      <Button fx:id="btnReturnAddRecord" layoutX="921.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnReturnAddRecordOnAction" prefHeight="31.0" prefWidth="126.0" text="Add Record">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

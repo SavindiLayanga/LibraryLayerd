@@ -1,0 +1,17 @@
+.btn{
+    -fx-background-color:  #d2dae2;
+    -fx-background-radius: 10;
+    -fx-min-width: 100px;
+    -fx-min-height: 30px;
+    -fx-max-width: 100px;
+    -fx-max-height:30px;
+}
+
+#pane>.button:hover{
+    -fx-background-color: 62CDFF;
+}
+
+#pane>.button:pressed{
+    -fx-background-color: ffffff;
+    -fx-text-fill: black;
+}

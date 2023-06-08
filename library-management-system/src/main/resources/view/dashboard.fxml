@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1536.0" stylesheets="@../../../../../../1st%20semester%20final%20project/src/main/resources/Stylesheet/startpage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="dashboardPane" layoutX="389.0" layoutY="73.0" prefHeight="713.0" prefWidth="1105.0" style="-fx-background-color: none;">
+         <children>
+            <Label fx:id="lblGreet" layoutX="285.0" layoutY="42.0" onDragDetected="#lblGreetOnAction" prefHeight="92.0" prefWidth="633.0" textFill="#2912bc">
+               <font>
+                  <Font name="Book Antiqua" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="713.0" fitWidth="1097.0" layoutX="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../1st%20semester%20final%20project/src/main/resources/img/15517801_5630974.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="23.0" layoutY="24.0" prefHeight="759.0" prefWidth="306.0" style="-fx-background-color: B0DAFF;">
+         <children>
+            <Button fx:id="btnDashboard" layoutX="31.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnDashboardOnActhion" prefHeight="27.0" prefWidth="253.0" stylesheets="@../../../../../../1st%20semester%20final%20project/src/main/resources/Stylesheet/startpage.css" text="Dashboard">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnEmployee" layoutX="31.0" layoutY="73.0" mnemonicParsing="false" onAction="#btnEmployeeOnActhion" prefHeight="24.0" prefWidth="253.0" stylesheets="@../../../../../../1st%20semester%20final%20project/src/main/resources/Stylesheet/startpage.css" text="Employee">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnMembers" layoutX="31.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnMembersOnAction" prefHeight="26.0" prefWidth="253.0" text="Members">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnAuthors" layoutX="31.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnAuthorOnAction" prefHeight="33.0" prefWidth="253.0" text="Authors">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnPublisher" layoutX="31.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnSuppliersOnAction" prefHeight="30.0" prefWidth="253.0" text="  Publishers">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnIssueBook" layoutX="31.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnIssueBookOnAction" prefHeight="26.0" prefWidth="253.0" text="  Issue Books">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnBook" layoutX="31.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnBookOnAction" prefHeight="26.0" prefWidth="253.0" text="Books">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnReturnBook" layoutX="31.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnReturnBookOnAction" prefHeight="30.0" prefWidth="253.0" text="   Return Books">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnLogOut" layoutX="58.0" layoutY="678.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="30.0" prefWidth="191.0" style="-fx-background-radius: 20;" text="LOG OUT">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="53.0" layoutY="29.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/dashboard_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="53.0" layoutY="76.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/badge_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="53.0" layoutY="121.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/import_contacts_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="53.0" layoutY="168.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/manage_accounts_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="53.0" layoutY="215.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/person_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="53.0" layoutY="263.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/group_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="53.0" layoutY="310.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/auto_stories_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="53.0" layoutY="359.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/assignment_return_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="1265.0" layoutY="14.0" prefHeight="49.0" prefWidth="134.0" textFill="#210062">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="lblTime" layoutX="1415.0" layoutY="19.0" prefHeight="39.0" prefWidth="103.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="lblGreet" layoutX="420.0" layoutY="14.0" prefHeight="49.0" prefWidth="346.0" textFill="#111b90">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

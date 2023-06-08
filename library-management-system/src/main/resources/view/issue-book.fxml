@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="WinIssueBook" prefHeight="727.0" prefWidth="1095.0" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(to right,#acd5ff,#8a83d4,#8383d4);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.controller.IssueBookController">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1120.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../1st%20semester%20final%20project/src/main/resources/img/15517801_5630974.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </ImageView>
+      <Text fill="#1e1375" layoutX="61.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Book Manage">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="85.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue ID">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIssueId" layoutX="113.0" layoutY="164.0" onAction="#txtIssueIdOnAction" prefHeight="39.0" prefWidth="317.0" />
+      <Text layoutX="85.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="dtIssuedt" layoutX="113.0" layoutY="253.0" prefHeight="39.0" prefWidth="317.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <TableView fx:id="tblIssueBook" layoutX="79.0" layoutY="369.0" prefHeight="318.0" prefWidth="952.0">
+        <columns>
+          <TableColumn fx:id="colIssueId" prefWidth="148.0" text="Issue ID" />
+            <TableColumn fx:id="colMemberId" prefWidth="156.0" text="Member ID" />
+          <TableColumn fx:id="colBookId" minWidth="0.0" prefWidth="172.0" text="Book ID" />
+            <TableColumn fx:id="colIssueDate" prefWidth="156.0" text="Issue Date" />
+            <TableColumn fx:id="colReturnDate" prefWidth="178.0" text="Return Date" />
+            <TableColumn fx:id="colAction" prefWidth="141.0" text="Action" />
+        </columns>
+         <effect>
+            <DropShadow height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </TableView>
+      <Text layoutX="466.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtMemberId" layoutX="490.0" layoutY="164.0" prefHeight="39.0" prefWidth="317.0" />
+      <DatePicker fx:id="dtReturndt" layoutX="490.0" layoutY="253.0" prefHeight="39.0" prefWidth="317.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Text layoutX="503.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbBooks" layoutX="869.0" layoutY="164.0" onAction="#cmbBooksOnAction" prefHeight="39.0" prefWidth="199.0" promptText="Select Book">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="issueAddRecord" layoutX="922.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnAddRecordOnAction" prefHeight="31.0" prefWidth="126.0" text="Add Record">
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
